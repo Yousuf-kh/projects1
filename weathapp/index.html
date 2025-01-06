@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input class="userInput" type="text" placeholder="Enter a name of a city">
+
+            <button class="searchBTN" onclick="getWeather()">🔎</button>
+        </div>
+
+        <div class="error">
+            <p>Please enter a city name</p>
+        </div>
+
+        <div class="weather-info-container">
+            <div class="weather-highlight">
+                <img class="weather-icon" src="./img/sun.webp" alt="weather-icon">
+
+                <h2 class="temp">1C</h2>
+
+                <h3 class="main">Cloudy</h3>
+
+                <p class="city">Tashkent</p>
+            </div>
+
+            <div class="weather-detail">
+                <div class="block">
+                    <p class="humidity">52%</p>
+                    <p>Humidity</p>
+                </div>
+
+                <div class="block">
+                    <p class="wind">7 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
